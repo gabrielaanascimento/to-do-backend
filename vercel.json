@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "name": "sistema-data-api",
+  "name": "to-do-backend",
   "builds": [
     {
-      "src": "app.js",
+      "src": "src/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "src/index.js"
     }
   ]
 }
