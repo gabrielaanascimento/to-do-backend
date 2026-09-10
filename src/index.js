@@ -12,4 +12,8 @@ app.use(express.json())
 app.use('/auth/users', userRoutes)
 app.use('/tasks', taskRoutes)
 
+app.get('/', (req,res) => {
+  res.send("Olá mundo")
+})
+
 export default app
